@@ -1,0 +1,384 @@
+#box {
+    width: 880px;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+    margin-bottom: 50px;
+    top: 30px;
+    position: relative;
+}
+
+#box:after {
+    display: block;
+    content: '.';
+    line-height: 0;
+    visibility: hidden;
+}
+
+.estilizacao {
+    display: block;
+    width: 880px;
+    list-style: none;
+}
+
+.estilizacao li {
+    position: relative;
+    display: block;
+    float: left;
+    width: 400px;
+    height: 229px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.estilizacao li img {
+    width: 100%;
+    height: 105%;
+    display: block;
+    z-index: 999;
+    position: absolute;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.conteudo {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #182C61;
+    overflow: hidden;
+    color: #fff;
+    margin-top: 160px;
+    border-radius: 10px;
+}
+
+.estilizacao li:hover img {
+    margin-top: -80px;
+}
+
+.conteudo p {
+    display: block;
+    color: #fff;
+    position: relative;
+    float: left;
+    width: 250px;
+    margin: 10px;
+    margin-bottom: 0;
+    font-family: sans-serif;
+    text-indent: 10px;
+
+}
+
+.btn-more {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    float: right;
+    padding: 3px 10px;
+    background: #AE2341;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.nome-secao {
+    font-size: 18px;
+}
+
+.descricao {
+    font-size: 14px;
+}
+
+.desenv img {
+    float: left;
+    width: 400px;
+    height: 240px;
+}
+
+.nomes {
+    float: right;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+
+/*-------------------------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+body {
+    background-image: url(../Imagens/BODY.jpg);
+    background-attachment: fixed;
+    background-repeat: round;
+
+}
+
+/*#004078 --- azul dahora*/
+header {
+    background: #182C61;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.menu li {
+    float: left;
+    display: inline-block;
+    font-weight: bold;
+    padding: 15px;
+    font-family: sans-serif;
+    margin-top: 42px;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.icones {
+    font-size: 30px;
+    color: white;
+    margin-top: 30px;
+    float: right;
+    margin-right: 105px;
+
+}
+
+.icones i {
+    padding: 10px;
+}
+
+
+.corpoM {
+    background: #d1d8e0;
+    width: 960px;
+    margin: auto;
+    height: 100%;
+    /*        opacity: 0.8;*/
+    margin-top: 150px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.corpoM h3 {
+    margin-top: 5px;
+    margin-left: 10px;
+    position: absolute;
+    background-color: #182C61;
+    color: white;
+    padding: 5px;
+    width: 430px;
+    border-radius: 20px;
+}
+
+.imgLogo {
+    float: left;
+    width: 280px;
+    height: 100px;
+    margin-top: -10px;
+    margin-left: 50px;
+
+}
+
+.imagNews {
+    position: relative;
+    z-index: 1;
+    height: 400px;
+}
+
+.imagNews img {
+    position: absolute;
+    height: 300px;
+    width: 470px;
+    right: 15px;
+    top: 45px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.imagNews p {
+    width: 450px;
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+}
+
+.imagNews h1 {
+    position: absolute;
+    right: 20px;
+    bottom: 95px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.imagNews section {
+    position: relative;
+    top: 45px;
+    height: 300px;
+    border-style: solid;
+    border-radius: 10px;
+    width: 441px;
+    left: 10px;
+
+}
+
+.imagNews section p {
+    height: 10px;
+    width: 290px;
+    position: absolute;
+    left: 70px;
+    top: 130px;
+    text-align: left;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 22px;
+    color: black;
+}
+
+.imagNews section h1 {
+    font-size: 35px;
+    position: absolute;
+    left: 80px;
+    top: 80px;
+    color: black;
+    font-family: sans-serif;
+}
+
+.endNews {
+    position: relative;
+    background-color: #182C61;
+    width: 455px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 20px;
+}
+
+.endNews h2 {
+    margin-left: 60px;
+    margin-top: 50px;
+    color: white;
+    padding: 5px;
+
+}
+
+.miniNews {
+    position: relative;
+    width: 420px;
+    height: 185px;
+}
+
+.miniNews img {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    height: 150px;
+    width: 230px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.miniNews div p {
+    position: absolute;
+    top: 65px;
+    margin-left: 272px;
+}
+
+.mrele {
+    position: absolute;
+    background-color: #182C61;
+    width: 455px;
+    top: 450px;
+    right: 0px;
+    border-radius: 20px;
+}
+
+.mrele h2 {
+    color: white;
+    padding: 5px;
+    margin-left: 120px;
+}
+
+.imagmrele {
+    position: relative;
+    z-index: 1;
+}
+
+.imagmrele img {
+    position: absolute;
+    height: 240px;
+    width: 445px;
+    right: 5px;
+    top: 35px;
+    border-radius: 10px;
+}
+
+.imagmrele p {
+    width: 450px;
+    position: absolute;
+    right: 10px;
+    top: 236px;
+    text-align: right;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+}
+
+.imagmrele h1 {
+    position: absolute;
+    right: 20px;
+    top: 205px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.textoG{
+    height: 600px;
+    
+}
+
+.textoG img{
+    float: left;
+    margin-top: 5%;
+    width: 250px;
+    padding: 0px;
+    border-radius: 30px;
+    height: 188px;
+    margin-left: 40px;
+}
+
+.textoG p{
+    float: right;
+    width: 65%;
+    margin-top: 1%;
+    text-align: left;
+    padding: 15px;
+}
+
+.textoG h1{
+    margin-top: 10%;
+    padding: 5px;
+    margin-left: 500px
+}
+
+.wallp{
+    position: relative;
+}
+
